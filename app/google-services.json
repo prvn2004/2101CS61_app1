@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1011779776278",
+    "project_id": "lostfoundiitp",
+    "storage_bucket": "lostfoundiitp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011779776278:android:c43be87ea89b82dda9aa37",
+        "android_client_info": {
+          "package_name": "com.college.lostfoundiitp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011779776278-0a37nq6na77pjrl0rfaut3paiqpe45to.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.college.lostfoundiitp",
+            "certificate_hash": "590e7581a841c8efecdf928c205b297c7ec2e97f"
+          }
+        },
+        {
+          "client_id": "1011779776278-elssisbi2sls94co91r2rcgo5qd2m3ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKxf_bKf0c-lCFN7H5woC_Bm5zl4PytC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011779776278-elssisbi2sls94co91r2rcgo5qd2m3ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

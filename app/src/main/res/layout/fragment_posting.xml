@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PostFragments.PostingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/NameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/full_name"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posttext" />
+
+    <EditText
+        android:id="@+id/PhoneNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="10dp"
+        android:hint="@string/phone_number"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/NameInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NameInput"
+        app:layout_constraintTop_toBottomOf="@+id/NameInput" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/Lostchip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="LOST"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/PhoneNumberInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PhoneNumberInput"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberInput" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/Foundchip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOUND"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Lostchip"
+        app:layout_constraintEnd_toEndOf="@+id/PhoneNumberInput"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toEndOf="@+id/Lostchip"
+        app:layout_constraintTop_toTopOf="@+id/Lostchip" />
+
+    <EditText
+        android:id="@+id/AdDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/description"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/PhoneNumberInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Lostchip"
+        app:layout_constraintTop_toBottomOf="@+id/Lostchip" />
+
+    <EditText
+        android:id="@+id/adDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/Message"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/AdDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AdDescription"
+        app:layout_constraintTop_toBottomOf="@+id/AdDescription" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AdLocation"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+        android:id="@+id/selectimages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/select_images"
+        android:backgroundTint="@color/LightGrey"
+        app:layout_constraintEnd_toEndOf="@+id/datePicker"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/datePicker"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/adDescription"
+            app:layout_constraintHorizontal_bias="0.852"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectimages"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/imagetext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:text="0 image selected"
+            app:layout_constraintBottom_toBottomOf="@+id/selectimages"
+            app:layout_constraintStart_toEndOf="@+id/selectimages"
+            app:layout_constraintTop_toTopOf="@+id/selectimages"
+            app:layout_constraintVertical_bias="0.482" />
+
+        <TextView
+            android:id="@+id/posttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="POST"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <EditText
+            android:id="@+id/AdLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Location"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/adDescription"
+            app:layout_constraintStart_toStartOf="@+id/adDescription"
+            app:layout_constraintTop_toBottomOf="@+id/adDescription" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/LightGrey"
+            android:padding="10dp"
+            android:text="select Time"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/AdLocation"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/datePicker"
+            app:layout_constraintTop_toTopOf="@+id/datePicker" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
