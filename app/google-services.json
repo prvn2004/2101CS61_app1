@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "1011779776278-0a37nq6na77pjrl0rfaut3paiqpe45to.apps.googleusercontent.com",
+          "client_id": "1011779776278-324mm49m7153a3uh9tfgl6jpelcn145g.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.college.lostfoundiitp",
-            "certificate_hash": "590e7581a841c8efecdf928c205b297c7ec2e97f"
+            "certificate_hash": "8590d0742a01a040eaaf1ef5e6d360c63bc1b600"
           }
         },
         {
